@@ -1,0 +1,328 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-weight: 400;
+}
+
+body{
+    margin:0;
+}
+
+h1{
+    font-family: 'DM Serif Display', serif;
+    font-weight: 800;
+}
+
+h2, h3, h4, h5, h6{
+    font-family: 'Merriweather', serif;
+}
+
+h2{
+    font-weight: 800;
+}
+
+h3{
+    font-weight: 700;
+}
+
+h4{
+    font-weight: 600;
+}
+
+h5{
+    font-weight: 500;
+}
+
+h6{
+    font-weight: 400;
+}
+
+p{
+    font-size: 1.2rem;
+    text-align:justify;
+}
+
+nav{
+    padding: auto;
+    background-color: rgba(0, 42, 82,0.9);
+    position: fixed;
+    z-index: 10;
+    list-style-type: none;
+    width: 100%;
+    border: 1px solid rgb(0, 42, 82);
+}
+
+#navbar{
+    margin:auto;
+    height:100%;
+    width:100%;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+#logo-nav{
+    display: inline-flex;
+}
+
+#navbar img{
+    margin: auto 1rem auto 1rem;
+    width:2rem;
+    height:2rem;
+}
+
+#navbar h2{
+    color:white;
+    margin:0;
+    padding:1rem;
+    font-size: 2.5rem;
+}
+
+#navbar ul{
+    list-style-type: none;
+    float: right;
+    display:inline-flex;
+    align-items:center;
+}
+
+#navbar li a{
+    text-decoration:none;
+    color:white;
+    margin: 1rem 2rem 1rem 2rem;
+    font-size: 1rem;
+}
+
+#navbar li a:hover{
+    text-decoration:underline;
+}
+
+#banner{
+    display:flex;
+    background-image: url("../images/img-banner.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    height: 30rem;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: 40rem;
+}
+
+#texto-banner{
+    display:block;
+}
+
+#texto-banner h1{
+    text-align:center;
+    font-size: 8rem;
+    margin: 0;
+    color:white;
+    background-color: rgba(255, 0, 0, .5);
+    border-radius: 2rem;
+    padding: 0 6rem;
+}
+
+#texto-banner h3{
+    text-align:center;
+    font-size: 2rem;
+    margin: 0;
+    padding: 1rem;
+    color: white;
+}
+
+#explicacion{
+    display:inline-flex;
+    justify-content: space-between;
+    margin: 2rem;
+    padding: 1rem;
+}
+
+
+#cadena-supervivencia{
+    width: 65%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+#cadena-supervivencia img{
+    width:6.5rem;
+    height: 6.5rem;
+    padding:0;
+}
+#cadena-supervivencia tr{
+display:flex;
+align-items: center;
+justify-content: center;
+}
+
+#cadena-supervivencia td{
+    width: 7.5rem;
+}
+
+#introduccion{
+    background-color: transparent;
+    padding: 1rem;
+    display:flex;
+    justify-content:center;
+    flex-direction: column;
+}
+
+#introduccion h3{
+    font-size: 3rem;
+}
+
+#introduccion p{
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+}
+
+#cadena{
+    background-color: rgba(189, 189, 189,0.9);
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-between;
+    padding: 1rem;
+    box-shadow: .3rem .15rem .05rem rgb(156, 156, 156);
+}
+
+#cadena table{
+    padding: 0 1rem 0 0;
+}
+
+#cadena table td{
+    font-size: 1.5rem;
+    text-align:center;
+    padding: 1rem;
+}
+
+#cadena .seccion-subtitulo{
+    padding: 0;
+    background-color:rgb(156, 156, 156);
+    border-radius:1rem;
+}
+
+.seccion-subtitulo{
+    font-size: 2rem;
+    margin:0;
+    padding:1rem;
+    text-align:center;
+}
+
+#puntos-calidad{
+    background-color: rgb(228, 48, 48, 0.95);
+    border-radius: 1rem;
+    display:flex;
+    width: 30%;
+    flex-direction: column;
+    padding: .5rem;
+    box-shadow: .4rem .15rem .05rem rgba(175, 26, 26,1);
+}
+
+#puntos-calidad ul{
+list-style-type: none;
+}
+
+#puntos-calidad h6 {
+    position:relative;
+    right: 1rem;
+    color:white;
+    font-size: 1.5rem;
+    padding: auto .5rem;
+    margin: 1rem 0 .5rem 0;
+    background-color: rgba(175, 26, 26,0.5);
+    text-align:center;
+}
+
+#puntos-calidad p {
+    position:relative;
+    color:black;
+    padding:auto;
+    margin: 0;
+    font-size: 1rem;
+    right:1rem;
+}
+
+#puntos-calidad .seccion-subtitulo{
+    background-color: rgba(175, 26, 26,0.9); 
+    text-align:center;
+}
+
+.strong{
+    font-weight: 700;
+}
+
+.tabla-rcp{
+    margin: 2rem;
+    width:80%;
+    display:flex;
+    justify-content:center;
+    flex-direction: column;
+
+}
+.tabla-rcp h3{
+    text-align:center;
+    padding: 1rem;
+    margin: 0rem 0rem 1rem 0rem;
+    color:white;
+    font-size: 2rem;
+}
+
+.tabla-rcp table{
+    left: 10rem;
+    padding: 0 0 2rem 0;
+}
+
+.tabla-rcp td{
+text-align:center;
+font-size: 1.5rem;
+min-width: 3.5rem;
+max-width:5rem;
+}
+
+.tabla-rcp th{
+    text-align:center;
+    color:white;
+    font-size: 1.5rem;
+    min-width: 3.5rem;
+    max-width:5rem;
+    }
+
+
+.adulto{
+    background-color:#480CA8;
+}
+
+.niño{
+    background-color:#3F37C9;
+}
+
+.bebe{
+    background-color:#4895EF;
+}
+
+article{
+    width:100%;
+    display:flex;
+    justify-content:center;
+}
+
+#tabla-adulto td{
+    background-color: rgba(58, 12, 163,0.7);
+}
+
+#tabla-niño td{
+    background-color: rgba(67, 97, 238,0.7);
+}
+
+#tabla-bebe td{
+    background-color: rgba(76, 201, 240,0.7);
+}
+
+footer{
+    background-color: rgba(0, 42, 82,1);
+    height: 4rem;
+}
