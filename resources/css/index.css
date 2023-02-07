@@ -1,0 +1,419 @@
+body{
+    background-color: rgb(19, 20, 31);
+    color: white;
+}
+
+
+nav{
+    background-color: rgba(5, 6, 15,0.6);
+    position:fixed;
+    padding: auto;
+    z-index: 10;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+
+#navbar{
+    display:flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+
+}
+
+#nav-logo{
+    display: inline-flex;
+    height: 5rem;
+    position:relative;
+    bottom: 0.7rem;
+}
+
+#nav-logo img{
+    height: 5rem;
+    width: 5rem;
+    padding: 1rem;
+    position:relative;
+    bottom:0.5rem;
+}
+
+#nav-logo h2{
+    font-family: 'Unbounded', cursive;
+    color:white;
+    font-size: 3rem;
+    position: relative;
+    bottom: 1rem;
+}
+
+
+
+#nav-list ul{
+    list-style: none;
+}
+
+
+#nav-list li{
+    display:inline-block;
+    padding: 0 1.5rem;
+}
+
+#nav-list a{
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.5rem;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0.5rem;
+    background-color:rgba(67, 97, 238,0.7);
+}
+
+#nav-list a:hover{
+    background-color:rgba(175, 67, 238, 0.7);
+    transition: background-color 0.15s;
+}
+
+#banner{
+    background-image:url("../images/banner-gif.gif.gif");
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+    width: 100%;
+    height: 50rem;
+
+}
+
+#banner-color{
+    background-color: rgba(32, 35, 58,0.1);
+    width: 100%;
+    height: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#banner-text{
+    position:relative;
+    top: 2rem;
+    padding: 0 0 1rem 0;
+    border-radius: 3rem;
+    background-color: rgba(19, 20, 31,0.8);
+
+}
+
+#banner-text h1{
+    font-family: 'Unbounded', cursive;
+    font-size: 10rem;
+    padding:0;
+    margin:1rem;
+    width: 100%;
+    text-align: center;
+    position:relative;
+    right: 1rem;
+}
+
+#color-1{
+    color:rgb(247, 37, 133);
+}
+
+#color-2{
+    color:rgb(114, 9, 183);
+}
+
+#color-3{
+    color:rgb(58, 12, 163);
+}
+
+#color-4{
+    color:rgb(67, 97, 238);
+}
+
+#color-5{
+    color:rgb(76, 201, 240);
+}
+
+#color-6{
+    color:rgb(56, 255, 222);
+}
+
+
+
+#banner-text h4{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 2rem;
+    padding:0;
+    letter-spacing: 1rem;
+    margin: 2rem 0 0 0;
+    text-align: center;
+    color: rgb(151, 153, 165);
+
+}
+
+#banner-text #blue{
+color: rgb(255, 255, 255);
+}
+
+
+h2{
+    font-family: 'Marcellus', serif;
+    font-size: 3rem;
+    text-align:center;
+    border-radius: 2rem;
+}
+
+p{
+    font-family: 'Roboto', serif; 
+    font-size: 2rem;
+    line-height: 3rem;
+}
+#about-section{
+display:flex;
+width: 80%;
+align-content: center;
+flex-direction:row;
+padding: 3rem 2rem;
+margin:auto;
+justify-content: space-between;
+}
+
+#about-section h2{
+    background-color: rgb(247, 37, 133);
+    width: 30%;
+}
+
+#about-section .description{
+    width: 80%;
+}
+
+#proyects-section .description{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin:0;
+    padding:0;
+
+}
+
+
+#proyects-section h2{
+    background-color: rgb(114, 9, 183);
+    width: 20%;
+    color:black;
+}
+
+#proyects-section p{
+    color:black;
+}
+
+
+#proyects-section{
+    background-color: rgb(237, 226, 245);
+    padding-bottom:2rem;
+}
+
+#proyects{
+    display:flex;
+    width:90%;
+    align-content: space-between;
+    margin:auto;
+
+}
+
+h6{
+    color:rgb(151, 153, 165);
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.5rem;
+    margin: 0 1rem 1rem 1rem;
+}
+
+.proyect-front{
+    position:relative;
+    width: 35rem;
+    height:25rem;
+    border-radius: 1rem;
+    margin: 0 1rem;
+
+}
+
+.proyect-front img{
+    display:block;
+    width: 100%;
+    height:100%;
+    border-radius: 1rem;
+}
+
+.proyect-back{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background: rgba(58, 12, 163,0.8);
+    font-size: 1rem;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content:center;
+    opacity:0;
+    transition: opacity 0.25s;
+}
+
+.proyect-back p{
+    font-weight: 800;
+}
+
+.proyect-back:hover{
+    opacity:1;
+}
+
+.proyect-back h5{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 2rem;
+}
+
+#community-section h2{
+    background-color: rgb(67, 97, 238);
+    width: 20%;
+    border-radius: 1.5rem;
+}
+
+#community-section h5{
+    background-color: rgba(67, 97, 238,0.7);
+    color:white;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 2rem;
+}
+
+
+#community-section .description{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin:0;
+    padding:0;
+
+}
+
+#community-section{
+    padding-bottom:2rem;
+}
+
+#community{
+    display:flex;
+    margin:auto;
+    width:90%;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    justify-items:space-between;
+
+
+}
+
+.bright{
+    background-color:rgb(237, 226, 245);
+    color:black;
+}
+
+#person1, #person2, #person3, #person4, #person5, #person6{
+    background-position:center;
+    background-size:cover;
+    border-radius: 1.5rem;
+    max-width: 20%;
+    height: 25rem;
+    margin: 2rem 2rem;
+}
+
+#person1-info, #person2-info, #person3-info, #person4-info, #person5-info, #person6-info{
+width:100%;
+height:100%;
+background: rgba(58, 12, 163,0.8);
+font-size: 1rem;
+opacity:0;
+transition: opacity 0.25s;
+position:relative;
+bottom:3.3rem;
+border-radius:1.5rem;
+
+}
+#person1-info:hover, #person2-info:hover, #person3-info:hover, #person4-info:hover, #person5-info:hover, #person6-info:hover{
+    opacity:1;
+}
+
+#person1{
+    background-image: url(../images/community/person-1.jpg);
+}
+
+#person2{
+    background-image: url(../images/community/person-2.jpg);
+}
+
+#person3{
+    background-image: url(../images/community/person-3.jfif);
+}
+
+#person4{
+    background-image: url(../images/community/person-4.jfif);
+}
+
+#person5{
+    background-image: url(../images/community/person-5.jpg);
+}
+
+#person6{
+    background-image: url(../images/community/person-6.jpg);
+}
+
+#join-section{
+    background-color:rgba(19, 20, 31,0.5);
+    display:flex;
+    flex-direction:column;
+    align-content:center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    align-items:center;
+}
+#section-gif{
+    height: 50rem;
+    background-image:url(../images/circuit.gif);
+    background-size: cover;
+    background-position:center;
+}
+
+#join-section h2{
+    background-color:rgb(56, 255, 222);
+    color:white;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 4rem;
+    width:40%;
+    margin:2rem auto;
+    padding: 1rem;
+    box-shadow:0.5rem 0.7rem rgb(67, 97, 238);
+    border-radius: 1rem;
+    border:1px solid rgb(67, 97, 238);
+}
+
+#join-section h2:hover{
+    background-color:rgb(67, 97, 238);
+    color:black;
+    border-radius: 1rem;
+    box-shadow:-0.5rem -0.7rem rgb(58, 12, 163);
+    position:relative;
+    left: 0.5rem;
+    top:0.5rem;
+
+}
+
+#footer-section{
+    height: 3rem;
+    width:100%;
+    height: 4rem;
+    margin: 0;
+}
+
+#footer-section .description{
+    text-align:center;
+}
